@@ -15,7 +15,7 @@ function hero(dark, still) {
   const typed = still ? `<text x="30" y="183">${phrases[0]}</text>` : phrases.map((phrase, i) => `<g class="phrase" style="animation-delay:${i*6}s"><text x="30" y="183" class="typed" style="animation-delay:${i*6}s">${escape(phrase)}</text></g>`).join('');
   return `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="350" viewBox="0 0 900 350" role="img" aria-labelledby="title desc">
 <title id="title">moses0100 — commit ก่อน เดี๋ยวค่อยเข้าใจ</title>
-<desc id="desc">ชื่อเด้งทีละตัว ข้อความพิมพ์สลับมุก และแมวตัวอักษรวิ่งพร้อมข้อความ อย่า push .env นะพ่อ</desc>
+<desc id="desc">ชื่อเด้งทีละตัว ข้อความพิมพ์สลับมุก และแมวตัวอักษรวิ่งพร้อมข้อความ อย่าเผลอ push .env ล่ะ</desc>
 <style>
 text{font-family:Tahoma,'Noto Sans Thai',sans-serif;fill:${foreground}}.name text{font-family:Consolas,monospace;font-size:64px;font-weight:700}.letter{animation:bounce 2.5s ease-in-out infinite}.phrase{opacity:0;animation:phrase 24s linear infinite}.typed{clip-path:inset(0 100% 0 0);animation:typing 24s steps(28,end) infinite}.cursor{animation:blink 1s step-end infinite}.cat{animation:run 12s linear infinite}.cat text{font-family:Consolas,monospace;font-size:18px}.typing text{fill:${link};font-size:24px}.speech{fill:${muted};font-size:15px}
 @keyframes bounce{0%,20%,100%{transform:translateY(0)}8%{transform:translateY(-14px)}14%{transform:translateY(3px)}}
@@ -23,14 +23,13 @@ text{font-family:Tahoma,'Noto Sans Thai',sans-serif;fill:${foreground}}.name tex
 @keyframes typing{0%{clip-path:inset(0 100% 0 0)}9%,19%{clip-path:inset(0 0 0 0)}24%,100%{clip-path:inset(0 100% 0 0)}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
 @keyframes run{from{transform:translateX(-180px)}to{transform:translateX(950px)}}
-@media(prefers-reduced-motion:reduce){.letter,.phrase,.typed,.cursor,.cat{animation:none!important}.phrase{display:none}.phrase:first-of-type{display:inline;opacity:1}.typed{clip-path:none}.cat{transform:translateX(350px)}}
 ${still ? '.letter,.phrase,.typed,.cursor,.cat{animation:none!important}.cat{transform:translateX(350px)}' : ''}
 </style>
 <rect width="900" height="350" fill="${background}"/>
 <text x="30" y="34" style="fill:${muted};font-size:17px">// เข้ามาแล้วอย่าเพิ่งกดออก</text>
 <g class="name">${letters}<text x="440" y="125" class="cursor" style="fill:${link}">_</text></g>
 <g class="typing">${typed}</g>
-<g class="cat"><text x="0" y="276" xml:space="preserve">${' /'+String.fromCharCode(92)+'_/'+String.fromCharCode(92)}</text><text x="0" y="296" xml:space="preserve">( o.o )</text><text x="0" y="316" xml:space="preserve"> &gt; ^ &lt;</text><text x="0" y="247" class="speech" style="font-family:Tahoma,sans-serif;font-size:15px;fill:${muted}">อย่า push .env นะพ่อ</text></g>
+<g class="cat"><text x="0" y="276" xml:space="preserve">${' /'+String.fromCharCode(92)+'_/'+String.fromCharCode(92)}</text><text x="0" y="296" xml:space="preserve">( o.o )</text><text x="0" y="316" xml:space="preserve"> &gt; ^ &lt;</text><text x="0" y="247" class="speech" style="font-family:Tahoma,sans-serif;font-size:15px;fill:${muted}">อย่าเผลอ push .env ล่ะ</text></g>
 <path d="M30 338H870" stroke="${dark?'#30363d':'#d0d7de'}" stroke-dasharray="4 5"/>
 </svg>\n`;
 }
@@ -38,8 +37,6 @@ for (const dark of [true,false]) for (const still of [false,true]) {
  await writeFile(join(root,`assets/chaos-${dark?'dark':'light'}${still?'-still':''}.svg`),hero(dark,still));
 }
 const readme = `<picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/chaos-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/chaos-light-still.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/chaos-dark.svg">
   <img src="assets/chaos-light.svg" alt="moses0100 — commit ก่อน เดี๋ยวค่อยเข้าใจ พร้อมแมวเตือนอย่า push .env" width="900">
 </picture>

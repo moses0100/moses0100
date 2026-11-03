@@ -6,7 +6,7 @@ Regenerate the README and animated/static banners with Node.js (no packages, API
 node scripts/build-profile.mjs
 ```
 
-The banner uses self-contained SVG and CSS animation. It contains no JavaScript, external fonts, requests, or credentials. GitHub renders it as an image; no script runs inside the README. The picture selects dark/light artwork and static artwork for reduced-motion preferences. A visible link also opens the static version.
+The banner uses self-contained SVG and CSS animation. It contains no JavaScript, external fonts, requests, or credentials. GitHub renders it as an image; no script runs inside the README. The picture selects dark/light animated artwork. The profile owner explicitly requested animation even when the browser reports reduced motion; the visible static-view link remains available. No browser or operating-system preference is changed.
 
 The n8n icon is from Simple Icons, under CC0-1.0; other technology icons retain their Devicon MIT notice in `assets/icons/LICENSE`. Brand names and marks belong to their respective owners.
 

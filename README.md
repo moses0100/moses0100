@@ -1,6 +1,4 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/chaos-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/chaos-light-still.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/chaos-dark.svg">
   <img src="assets/chaos-light.svg" alt="moses0100 — commit ก่อน เดี๋ยวค่อยเข้าใจ พร้อมแมวเตือนอย่า push .env" width="900">
 </picture>
