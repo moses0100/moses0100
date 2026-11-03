@@ -1,39 +1,46 @@
-<img src="assets/header.svg" alt="Tanawat — Laravel, React และ Next.js" width="960">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/chaos-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/chaos-light-still.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/chaos-dark.svg">
+  <img src="assets/chaos-light.svg" alt="moses0100 — commit ก่อน เดี๋ยวค่อยเข้าใจ พร้อมแมวเตือนอย่า push .env" width="900">
+</picture>
 
-กำลังฝึกทำเว็บแบบ full-stack ผ่านโปรเจกต์ที่ลองใช้เอง แล้วค่อย ๆ ปรับจากสิ่งที่เจอระหว่างทำ
+<sub><a href="assets/chaos-light-still.svg">ดูแบบไม่ขยับ</a></sub>
 
-ช่วงนี้ทำทั้ง Laravel + React และ Next.js ตั้งแต่หน้าตาเว็บ ฐานข้อมูล ไปจนถึงการเขียน tests
+กำลังฝึก Laravel, React กับ Next.js  
+ช่วงนี้กำลังศึกษา AI — ลอง Jev กับ Hermes อยู่  
+อันไหนพัง ก็ถือว่าได้เรียนรู้เพิ่ม
 
 ### เครื่องมือที่ใช้
 
-<p><img src="assets/icons/php.svg" width="42" height="42" alt="PHP" title="PHP">&nbsp;&nbsp;
-<img src="assets/icons/laravel.svg" width="42" height="42" alt="Laravel" title="Laravel">&nbsp;&nbsp;
-<img src="assets/icons/react.svg" width="42" height="42" alt="React" title="React">&nbsp;&nbsp;
-<img src="assets/icons/typescript.svg" width="42" height="42" alt="TypeScript" title="TypeScript">&nbsp;&nbsp;
-<img src="assets/icons/nextjs.svg" width="42" height="42" alt="Next.js" title="Next.js">&nbsp;&nbsp;
-<img src="assets/icons/postgresql.svg" width="42" height="42" alt="PostgreSQL" title="PostgreSQL">&nbsp;&nbsp;
-<img src="assets/icons/git.svg" width="42" height="42" alt="Git" title="Git"></p>
-
-### โปรเจกต์ที่กำลังทำ
-
-<table>
-<tr><td width="50%" valign="top"><strong><a href="https://github.com/moses0100/thai-pdf-rescue">Thai PDF Rescue</a></strong><p>ดึงข้อความ PDF ไทยและอ่านภาพสแกนด้วย OCR ในเบราว์เซอร์ ไม่ต้องอัปโหลดเอกสาร</p><sub>Next.js · TypeScript · PDF.js · Tesseract.js</sub></td>
-<td width="50%" valign="top"><strong><a href="https://github.com/moses0100/roomfix">RoomFix</a></strong><p>แจ้งซ่อม นัดช่าง และติดตามงาน แยกหน้าที่ของผู้พัก ผู้ดูแล และช่าง</p><sub>Laravel · React · Inertia · PostgreSQL</sub></td></tr>
-<tr><td width="50%" valign="top"><strong><a href="https://github.com/moses0100/repairdesk">RepairDesk</a></strong><p>ระบบรับซ่อมมือถือกับ POS ลองทำเรื่องสต็อก การรับเงิน และป้องกันบิลซ้ำ</p><sub>Laravel · React · SQLite / PostgreSQL</sub></td>
-<td width="50%" valign="top"><strong><a href="https://github.com/moses0100/devquest">DevQuest</a></strong><p>เก็บเป้าหมาย งานย่อย และบันทึกสิ่งที่เรียนรู้จากการฝึกเขียนโค้ด</p><sub>Next.js · TypeScript · Prisma · PostgreSQL</sub></td></tr>
-</table>
-
-<a href="https://github.com/moses0100/roomfix"><img src="assets/roomfix.png" alt="หน้าภาพรวม RoomFix แสดงสถานะงานแจ้งซ่อมและรายการงาน" width="960"></a>
-
-<sub>หน้าภาพรวม RoomFix — ภาพจากข้อมูลเดโม ส่วนวิธีรันและข้อจำกัดอยู่ใน README ของแต่ละโปรเจกต์</sub>
-
-### GitHub
-
 <p>
-<img src="assets/activity.svg" alt="จำนวน public repositories และ commits ของ 4 โปรเจกต์ใน 30 วัน" width="390">
-<img src="assets/languages.svg" alt="สัดส่วนภาษาแยกตามปริมาณโค้ดของ 4 โปรเจกต์ ไม่ใช่คะแนนความถนัด" width="390">
+<img src="assets/icons/php.svg" width="48" height="48" alt="PHP">&nbsp;&nbsp;
+<img src="assets/icons/laravel.svg" width="48" height="48" alt="Laravel">&nbsp;&nbsp;
+<img src="assets/icons/react.svg" width="48" height="48" alt="React">&nbsp;&nbsp;
+<img src="assets/icons/typescript.svg" width="48" height="48" alt="TypeScript">&nbsp;&nbsp;
+<img src="assets/icons/nextjs.svg" width="48" height="48" alt="Next.js">&nbsp;&nbsp;
+<img src="assets/icons/postgresql.svg" width="48" height="48" alt="PostgreSQL">&nbsp;&nbsp;
+<img src="assets/icons/git.svg" width="48" height="48" alt="Git">&nbsp;&nbsp;
+<img src="assets/icons/n8n.svg" width="48" height="48" alt="n8n">&nbsp;&nbsp;
 </p>
 
-<sub>ข้อมูล ณ 3 พฤศจิกายน 2026 · ยอด commits รวมผู้ร่วมพัฒนาใน repo ทั้ง 4 แห่ง · ไอคอนจาก <a href="https://github.com/devicons/devicon">Devicon</a></sub>
+### ของที่ทำไว้ เผื่อมีประโยชน์ ↓
 
-<!-- Refresh local cards: node scripts/update-stats.mjs. Review and commit the changed SVGs manually. -->
+| โปรเจกต์ | ทำอะไร |
+| --- | --- |
+| **RMUTI DORM** | แชตบอตหอพักผ่าน LINE — ถามกฎ เช็กค่าไฟ มีหน้าเจ้าหน้าที่และนำเข้าค่าไฟ PDF/Excel · n8n / RAG / Supabase |
+| [**FixIT**](https://github.com/moses0100/fixit) | ระบบแจ้งซ่อมคอมพิวเตอร์ ติดตามสถานะ ออกใบรับซ่อม และรายงาน PDF/Excel · Laravel / MySQL |
+| [**Thai PDF Rescue**](https://github.com/moses0100/thai-pdf-rescue) | PDF ภาษาไทย มาคุยกันหน่อย — ดึงข้อความและ OCR ในเบราว์เซอร์ |
+| [**RoomFix**](https://github.com/moses0100/roomfix) | ห้องพังแจ้งซ่อม เว็บพังแจ้งผม — แจ้งซ่อม นัดช่าง ติดตามงาน |
+| [**RepairDesk**](https://github.com/moses0100/repairdesk) | ระบบร้านซ่อม ที่คนเขียนก็ต้องซ่อม — รับงานซ่อม POS และสต็อก |
+| [**DevQuest**](https://github.com/moses0100/devquest) | ทำไปก่อน เก่งทีหลัง — เก็บเป้าหมาย งานย่อย และสิ่งที่เรียนรู้ |
+
+<sub>RMUTI DORM คือโปรเจกต์ที่ใช้ชื่อ RMUTI HOME ในบันทึกช่วงแรก</sub>
+
+---
+
+ถ้าอ่านถึงตรงนี้แล้ว **ไปดูโค้ดด้วย อย่าดูแต่แมว**
+
+<sub>ไอคอน: <a href="https://github.com/devicons/devicon">Devicon</a> · <a href="https://github.com/simple-icons/simple-icons">Simple Icons</a></sub>
+
+<!-- Profile assets: see PROFILE.md for regeneration and rollback. -->
